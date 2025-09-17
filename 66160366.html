@@ -1,51 +1,80 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaimook</title>
+  <title>Profile Card</title>
   <style>
     body {
-      font-family: "Prompt", sans-serif;
-      background: #f2f6ff;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
+      background: #f4f6f8;
+      font-family: 'Segoe UI', sans-serif;
     }
-    .card {
+
+    .profile-card {
       background: #fff;
-      border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       width: 320px;
-      padding: 20px;
+      padding: 2rem 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
       text-align: center;
+      transition: transform 0.3s ease;
     }
-    .card img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
+
+    .profile-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .profile-card img {
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
-      border: 4px solid #4e73df;
-      margin-bottom: 15px;
+      object-fit: cover;
+      border: 4px solid #4db5ff;
+      margin-bottom: 1rem;
     }
-    .card h2 {
-      margin: 10px 0 5px;
-      font-size: 20px;
+
+    .profile-card h2 {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
       color: #333;
     }
-    .card p {
-      margin: 5px 0;
-      font-size: 14px;
-      color: #555;
+
+    .profile-card p {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .profile-card .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .profile-card .social-links a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #4db5ff;
+      transition: color 0.3s;
+    }
+
+    .profile-card .social-links a:hover {
+      color: #1a73e8;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/cbc1/live/74fe8e20-5170-11ed-ac87-630245663c6a.png.webp" alt="Profile">
-    <h2>นางสาวพิมลพรรณ มามาก</h2>
-    <p>Email: 66160366@go.buu.ac.th</p>
+
+  <div class="profile-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo6O0CvrOU9lh0kQO9JjRkXHkqD5cOBXdxUw&s" alt="Profile Picture">
+    <h2>Pimonphan Mamak</h2>
+    <p>Email 66160366@go.buu.ac.th</p>
+
   </div>
+
 </body>
 </html>
