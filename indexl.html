@@ -66,24 +66,30 @@
 
   <div class="members" id="members">
     <!-- สมาชิกแต่ละคน -->
-    <div class="member" onclick="showDetails(this, 'วัตถุประสงค์: ตัวอย่าง A<br>เครื่องมือที่ใช้: ตัวอย่าง A<br>เทคโนโลยี: ตัวอย่าง A<br>เฟรมเวิร์ก: ตัวอย่าง A')">
-      <img src="https://via.placeholder.com/60" alt="member1">
-      <div>Jame Smith</div>
-    </div>
-    <div class="member" onclick="showDetails(this, 'วัตถุประสงค์: ตัวอย่าง B<br>เครื่องมือที่ใช้: ตัวอย่าง B<br>เทคโนโลยี: ตัวอย่าง B<br>เฟรมเวิร์ก: ตัวอย่าง B')">
-      <img src="https://via.placeholder.com/60" alt="member2">
-      <div>Jame Smith</div>
-    </div>
-    <div class="member" onclick="showDetails(this, 'วัตถุประสงค์: ตัวอย่าง C<br>เครื่องมือที่ใช้: ตัวอย่าง C<br>เทคโนโลยี: ตัวอย่าง C<br>เฟรมเวิร์ก: ตัวอย่าง C')">
-      <img src="https://via.placeholder.com/60" alt="member3">
-      <div>Jame Smith</div>
+    <div class="member" onclick="navigateToProfile('66160085.html')">
+      <img src="Screenshot 2025-06-26 095359.png" alt="member1">
+      <div>Narathip Saentaweesuk</div>
     </div>
     <!-- เพิ่มสมาชิกตามต้องการ -->
   </div>
 </div>
 
 <script>
+    function showDetails(element, details) {
+        // Remove selected class from all members
+        const members = document.querySelectorAll('.member');
+        members.forEach(member => member.classList.remove('selected'));
+        
+        // Add selected class to clicked member
+        element.classList.add('selected');
+        
+        // Update details section
+        document.getElementById('details').innerHTML = '<strong>รายละเอียดของสมาชิก</strong><p>' + details + '</p>';
+    }
     
+    function navigateToProfile(profileUrl) {
+        window.location.href = profileUrl;
+    }
 </script>
 
 </body>
