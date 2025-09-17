@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>โปรไฟล์นิสิต</title>
+    <style>
+      :root {
+        --bg: #f7f8fb;
+        --card: #ffffff;
+        --line: #e5e7eb;
+        --text: #111827;
+        --muted: #6b7280;
+        --radius: 16px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu,
+          "Noto Sans Thai", sans-serif;
+        background: var(--bg);
+        margin: 0;
+        padding: 24px;
+        color: var(--text);
+      }
+      .container {
+        max-width: 820px;
+        margin: 0 auto;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+        padding: 20px;
+      }
+      .badge {
+        display: inline-block;
+        padding: 4px 10px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        font-size: 12px;
+        color: #111;
+      }
+      .list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .list li {
+        padding: 8px 0;
+        border-bottom: 1px dashed #eee;
+      }
+      a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 14px;
+        border-radius: 10px;
+        border: 1px solid var(--line);
+        background: #fff;
+      }
+      .btn:hover {
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+      }
+      .footer {
+        margin-top: 24px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      @media (max-width: 640px) {
+        .grid2 {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>โปรไฟล์นิสิต</h1>
+        <span class="badge">ภาคเรียน 1/2565 • วิชา 88832359</span>
+      </div>
+
+      <div class="card">
+        <h2>ข้อมูลที่ต้องมีตามโจทย์</h2>
+        <ul class="list">
+          <li><strong>ชื่อ–สกุลจริง:</strong> นาย ธนภัทร จันทร์งาม</li>
+          <li><strong>รหัสนิสิต:</strong> 66160226</li>
+          <li>
+            <strong>อีเมล:</strong>
+            <a href="mailto:66160226@go.buu.ac.th">66160226@go.buu.ac.th</a>
+          </li>
+        </ul>
+        <div style="margin-top: 12px" class="muted">
+          * ใช้รูปแบบอีเมล <code>รหัสนิสิต@go.buu.ac.th</code>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top: 16px">
+        <h2>บทบาท & ทักษะ</h2>
+        <div class="grid2">
+          <div>
+            <h3>บทบาทในทีม</h3>
+            <ul class="list">
+              <li>Front-end Developer</li>
+            </ul>
+          </div>
+          <div>
+            <h3>ทักษะ/สิ่งที่สนใจ</h3>
+            <ul class="list">
+              <li>HTML, CSS, JavaScript</li>
+              <li>Git / GitHub / GitLab</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 16px; display: flex; gap: 10px; flex-wrap: wrap">
+        <a class="btn" href="../team0/index.html">← กลับไปหน้าทีม</a>
+      </div>
+
+      <p class="footer">
+        หมายเหตุ: ให้แก้เฉพาะหน้าโปรไฟล์ของตนเอง ห้ามลบ/แก้ของเพื่อน
+      </p>
+    </div>
+  </body>
+</html> 
