@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ทีมและรายละเอียดระบบ</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .details {
+    border: 1px solid #4a6cf7;
+    padding: 15px;
+    width: 300px;
+  }
+
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 700px;
+  }
+
+  .member {
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .member img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+  }
+
+  .member.selected img {
+    border: 2px dashed orange;
+  }
+</style>
+</head>
+<body>
+
+<h2>ทีม 0 ระบบแจ้งเสียแจ้งซ่อม (FixDesk)</h2>
+
+<div class="container">
+  <div class="details" id="details">
+    <strong>รายละเอียดของระบบ</strong>
+    <p>วัตถุประสงค์: เพื่ออำนวยความสะดวกในการแจ้งเสียภายในองค์กร</p>
+    <p>เครื่องมือที่ใช้: xxxxxxxx</p>
+    <p>เทคโนโลยี: xxxxxxxxx</p>
+    <p>เฟรมเวิร์ก: Vue.js</p>
+  </div>
+
+  <div class="members" id="members">
+    <!-- สมาชิกแต่ละคน -->
+    <div class="member" onclick="showDetails(this, 'วัตถุประสงค์: ตัวอย่าง A<br>เครื่องมือที่ใช้: ตัวอย่าง A<br>เทคโนโลยี: ตัวอย่าง A<br>เฟรมเวิร์ก: ตัวอย่าง A')">
+      <img src="https://via.placeholder.com/60" alt="member1">
+      <div>Jame Smith</div>
+    </div>
+    <div class="member" onclick="showDetails(this, 'วัตถุประสงค์: ตัวอย่าง B<br>เครื่องมือที่ใช้: ตัวอย่าง B<br>เทคโนโลยี: ตัวอย่าง B<br>เฟรมเวิร์ก: ตัวอย่าง B')">
+      <img src="https://via.placeholder.com/60" alt="member2">
+      <div>Jame Smith</div>
+    </div>
+    <div class="member" onclick="showDetails(this, 'วัตถุประสงค์: ตัวอย่าง C<br>เครื่องมือที่ใช้: ตัวอย่าง C<br>เทคโนโลยี: ตัวอย่าง C<br>เฟรมเวิร์ก: ตัวอย่าง C')">
+      <img src="https://via.placeholder.com/60" alt="member3">
+      <div>Jame Smith</div>
+    </div>
+    <!-- เพิ่มสมาชิกตามต้องการ -->
+  </div>
+</div>
+
+<script>
+    
+</script>
+
+</body>
+</html>
